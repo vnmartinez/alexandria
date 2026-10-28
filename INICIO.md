@@ -13,7 +13,7 @@ clonar e compartilhar; os livros permanecem com seus autores e editoras.
 | [[areas/natureza\|Ciências da Natureza]] | Física, química, biologia, Terra |
 | [[areas/saude\|Ciências da Saúde]] | Corpo, clínica e cuidado |
 | [[areas/aplicadas\|Sociais Aplicadas]] | Direito, economia, gestão, políticas |
-| [[areas/engenharias\|Engenharias e Tecnologia]] | Projeto e operação de sistemas |
+| [[areas/engenharias\|Engenharias e Tecnologia]] | Projeto e operação de sistemas — **4 cursos** |
 | [[areas/artes-e-letras\|Artes e Letras]] | Línguas, literatura, artes, música |
 
 ## Catálogo de livros

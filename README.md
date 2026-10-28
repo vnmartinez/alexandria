@@ -18,7 +18,7 @@ e estude — sem plugin, sem conta, sem custo.
 | [Ciências da Natureza](https://github.com/vnmartinez/alexandria/blob/main/areas/natureza.md) | — |
 | [Ciências da Saúde](https://github.com/vnmartinez/alexandria/blob/main/areas/saude.md) | — |
 | [Sociais Aplicadas](https://github.com/vnmartinez/alexandria/blob/main/areas/aplicadas.md) | — |
-| [Engenharias e Tecnologia](https://github.com/vnmartinez/alexandria/blob/main/areas/engenharias.md) | — |
+| [Engenharias e Tecnologia](https://github.com/vnmartinez/alexandria/blob/main/areas/engenharias.md) | Elétrica, Mecânica, Civil, Software |
 | [Artes e Letras](https://github.com/vnmartinez/alexandria/blob/main/areas/artes-e-letras.md) | — |
 
 Os links acima usam o endereço completo do GitHub de propósito: assim o README não
