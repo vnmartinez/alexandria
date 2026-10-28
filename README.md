@@ -5,7 +5,7 @@ e estude — sem plugin, sem conta, sem custo.
 
 ## Comece por aqui
 
-- [Nó central do vault](https://github.com/vnmartinez/alexandria/blob/main/INICIO.md)
+- [Nó central do vault](INICIO.md)
 - [Psicologia — curso de 12 meses](https://github.com/vnmartinez/alexandria/blob/main/cursos/humanas/psicologia.md)
 - [Catálogo de livros](https://github.com/vnmartinez/alexandria/blob/main/biblioteca/catalogo.md)
 

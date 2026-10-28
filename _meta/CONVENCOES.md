@@ -1,3 +1,5 @@
+↑ [[_meta/COMO-CONTRIBUIR|Como contribuir]]
+
 # Convenções
 
 ## Formato
@@ -11,32 +13,44 @@
 ## Nomes
 
 - Pastas e arquivos em `kebab-case`, ASCII, minúsculos: `artes-e-letras.md`.
-- Nomes únicos no vault inteiro: wikilink resolve por nome. Exceção: `README.md`,
-  que nunca é alvo de wikilink.
+- Nomes únicos no vault inteiro: wikilink resolve por nome. Exceção: `README.md`
+  (raiz e `pessoal/`); o de `pessoal/` é linkado sempre pelo caminho completo.
 - Cursos: `cursos/<area>/<curso>.md`. Áreas: `areas/<area>.md`.
 - Áreas válidas: `humanas`, `exatas`, `natureza`, `saude`, `aplicadas`,
   `engenharias`, `artes-e-letras`.
 
 ## Grafo e links
 
-O grafo do Obsidian é uma árvore. Só estes wikilinks existem:
+O grafo do Obsidian é uma árvore: toda nota tem exatamente um pai, nenhuma fica
+solta e não há ciclo. Só estes wikilinks existem:
 
-| Arquivo | Pode linkar para |
-|---|---|
-| `INICIO.md` | as 7 áreas e o catálogo |
-| `areas/<area>.md` | `INICIO` e os cursos da própria área |
-| `cursos/<area>/<curso>.md` | a própria área e âncoras internas (`[[#Mês N — Tema]]`) |
-| `biblioteca/catalogo.md` | `INICIO` |
+| Arquivo | Pai | Filhos |
+|---|---|---|
+| `INICIO.md` | — | 7 áreas, catálogo, `pessoal/README`, `_meta/sobre` |
+| `_meta/sobre.md` | `INICIO` | `AGENTS`, `_meta/COMO-CONTRIBUIR` |
+| `areas/<area>.md` | `INICIO` | cursos da própria área |
+| `cursos/<area>/<curso>.md` | sua área | âncoras internas (`[[#Mês N — Tema]]`) |
+| `biblioteca/catalogo.md` | `INICIO` | — |
+| `AGENTS.md` | `_meta/sobre` | `CLAUDE`, `GEMINI`, playbooks de `_meta/agentes/` |
+| `_meta/agentes/*.md` | `AGENTS` | — |
+| `_meta/COMO-CONTRIBUIR.md` | `_meta/sobre` | `CONVENCOES`, `FONTES`, `VERIFICACAO`, os 3 modelos |
+| `_meta/{CONVENCOES,FONTES,VERIFICACAO}.md` | `COMO-CONTRIBUIR` | — |
+| `pessoal/README.md` | `INICIO` | — |
+| `README.md` | — | `INICIO` (link relativo) |
 
+- Link para o pai fica na primeira linha (`↑ [[…]]`). Exceções sem linha de pai,
+  ligadas só pelo link que vem do pai: modelos (o link seria copiado para a nota
+  nova), adaptadores (lidos por ferramentas) e `README.md` (é a entrada do GitHub).
 - Nada de link lateral (área para área, curso para curso), curso cruzado, link de
   curso para catálogo ou de catálogo para curso.
 - O curso cita obras pelo título, em texto; o catálogo é aberto pelo nó central.
-- `_meta/`, `_templates/`, `AGENTS.md`, adaptadores e `README.md` citam caminhos
-  entre crases. Nos modelos, links de exemplo ficam entre crases para não criar nós
-  fantasmas no grafo.
-- O `README.md` linka por URL completa do GitHub
-  (`https://github.com/vnmartinez/alexandria/blob/main/<caminho>`), que funciona no
-  site e não cria aresta no grafo.
+- Qualquer outra menção a arquivo vai entre crases. Nos modelos, links de exemplo
+  também ficam entre crases, para não criar nós fantasmas no grafo.
+- O `README.md` linka `INICIO.md` por caminho relativo e todo o resto por URL
+  completa do GitHub (`https://github.com/vnmartinez/alexandria/blob/main/<caminho>`),
+  que funciona no site e não cria aresta no grafo.
+- `.github/copilot-instructions.md` fica em pasta oculta, que o Obsidian não indexa;
+  não entra no grafo.
 - Links externos sempre em URL completa com `https://`.
 
 ## Curso

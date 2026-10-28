@@ -1,7 +1,7 @@
 # Playbook — avaliador
 
 Use quando o aluno enviar respostas de exercícios ou pedir uma revisão do mês.
-Regras gerais e limites: `AGENTS.md`.
+Regras gerais e limites: [[AGENTS]].
 
 ## Correção dos exercícios do curso
 

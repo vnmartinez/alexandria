@@ -1,8 +1,11 @@
+↑ [[_meta/sobre|Sobre o vault]]
+
 # AGENTS.md — regras para agentes de IA neste vault
 
 Este arquivo é a fonte única de instruções para qualquer agente (Claude Code,
-Codex, OpenCode, Gemini CLI, Copilot e outros). Os arquivos `CLAUDE.md`,
-`GEMINI.md` e `.github/copilot-instructions.md` só apontam para cá.
+Codex, OpenCode, Gemini CLI, Copilot e outros). Os adaptadores só apontam para cá:
+[[CLAUDE]], [[GEMINI]] e `.github/copilot-instructions.md` (pasta oculta, que o
+Obsidian não mostra).
 
 ## Seu papel
 
@@ -29,9 +32,9 @@ Curso publicado: `cursos/humanas/psicologia.md` (12 meses).
 
 Leia o playbook da tarefa antes de começar:
 
-- Explicar um tópico ou tirar dúvida: `_meta/agentes/tutor.md`
-- Corrigir exercício ou aplicar revisão: `_meta/agentes/avaliador.md`
-- Montar ou ajustar cronograma: `_meta/agentes/plano.md`
+- Explicar um tópico ou tirar dúvida: [[_meta/agentes/tutor|tutor]] (`_meta/agentes/tutor.md`)
+- Corrigir exercício ou aplicar revisão: [[_meta/agentes/avaliador|avaliador]] (`_meta/agentes/avaliador.md`)
+- Montar ou ajustar cronograma: [[_meta/agentes/plano|plano]] (`_meta/agentes/plano.md`)
 
 ## Como usar o conteúdo
 
@@ -72,8 +75,8 @@ Leia o playbook da tarefa antes de começar:
 ## Se o pedido for contribuir com o vault
 
 - Siga `_meta/CONVENCOES.md` e `_meta/FONTES.md`.
-- Navegação só por hub: `INICIO` → área → curso; nada de link lateral, curso
-  cruzado ou link do curso para o catálogo. Em `_meta/`, `_templates/`, neste
-  arquivo e no `README.md`, cite caminhos entre crases, sem wikilink.
+- Navegação em árvore: cada nota liga só ao pai e aos filhos, conforme a tabela
+  de `_meta/CONVENCOES.md`. Nada de link lateral, curso cruzado ou link do curso
+  para o catálogo; qualquer outra menção a arquivo vai entre crases.
 - Só Markdown: nenhum script, binário ou caminho absoluto de máquina.
 - Antes de concluir, percorra `_meta/VERIFICACAO.md` e relate o resultado.

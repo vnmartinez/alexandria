@@ -1,7 +1,7 @@
 # Playbook — plano de estudo
 
 Use quando o aluno quiser montar, ajustar ou retomar um cronograma.
-Regras gerais e limites: `AGENTS.md`.
+Regras gerais e limites: [[AGENTS]].
 
 ## Coleta
 

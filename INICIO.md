@@ -27,8 +27,9 @@ obra, com a indicação do que é gratuito e do que é comprado ou emprestado.
    em Windows, macOS ou Linux).
 2. Cada curso é uma nota única: o topo traz o plano e a bibliografia, e cada mês
    é uma seção `## Mês N — Tema`. Use o índice do curso para pular de mês.
-3. Copie `_templates/anotacao.md` para `pessoal/<area>/<curso>/` e registre ali o
-   seu progresso — essa pasta não vai para o git e não gera conflito no `git pull`.
+3. Registre o seu progresso em `pessoal/<area>/<curso>/`, usando o modelo de
+   anotação — essa pasta não vai para o git e não gera conflito no `git pull`.
+   Veja [[pessoal/README|Sua área pessoal]].
 4. Faça os exercícios do mês antes de abrir o gabarito.
 5. Ao fim do mês, confira o "Resultado esperado": se não conseguir explicar,
    refaça as leituras indicadas.
@@ -36,17 +37,17 @@ obra, com a indicação do que é gratuito e do que é comprado ou emprestado.
 ## Como estudar com um agente de IA
 
 Abra esta pasta no Claude Code, Codex, OpenCode, Gemini CLI ou Copilot. O agente lê
-`AGENTS.md` e assume o papel de tutor: explica, pergunta, corrige exercício e monta
+as regras e assume o papel de tutor: explica, pergunta, corrige exercício e monta
 plano de estudo. Nenhuma configuração extra é necessária.
 
-- Regras que o agente segue: `AGENTS.md`
-- Playbooks: `_meta/agentes/tutor.md`, `_meta/agentes/avaliador.md`, `_meta/agentes/plano.md`
+Regras, limites e playbooks dos agentes estão em [[_meta/sobre|Sobre o vault]],
+junto com o guia de contribuição.
 
 ## Grafo
 
-A navegação é uma árvore: este nó → áreas → cursos, mais o catálogo. Para ver só a
-árvore no grafo do Obsidian, desligue **Órfãos** nos filtros; os arquivos de apoio
-(`_meta/`, `_templates/`, `AGENTS.md`) não têm links e somem da vista.
+A navegação é uma árvore, sem pontas soltas nem ciclos. Este nó tem quatro ramos:
+áreas (com os cursos), catálogo, área pessoal e "Sobre o vault" (agentes e
+contribuição). Cada nota liga só ao pai e aos filhos.
 
 ## Aviso
 
@@ -59,5 +60,4 @@ hospedado neste repositório.
 
 ## Contribuir
 
-Leia `_meta/COMO-CONTRIBUIR.md`, as convenções em `_meta/CONVENCOES.md` e a
-checklist em `_meta/VERIFICACAO.md`.
+Correções e cursos novos são bem-vindos: veja "Sobre o vault", acima.

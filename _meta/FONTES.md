@@ -1,3 +1,5 @@
+↑ [[_meta/COMO-CONTRIBUIR|Como contribuir]]
+
 # Política de fontes e licenças
 
 ## Princípio

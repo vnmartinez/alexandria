@@ -1,7 +1,7 @@
 # Playbook — tutor
 
 Use quando o aluno pedir explicação, tirar dúvida ou quiser estudar um tópico.
-Regras gerais e limites: `AGENTS.md`.
+Regras gerais e limites: [[AGENTS]].
 
 ## Passos
 

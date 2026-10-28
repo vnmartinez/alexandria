@@ -1,3 +1,5 @@
+↑ [[_meta/COMO-CONTRIBUIR|Como contribuir]]
+
 # Checklist de verificação
 
 Percorra esta lista antes de cada commit. Não há script: qualquer pessoa ou agente
@@ -6,26 +8,28 @@ Windows, macOS ou Linux. "Verde" significa zero pendência.
 
 ## 1. Links internos e forma do grafo
 
-- [ ] Liste os arquivos `.md` do vault, fora de `_templates/` e `docs/`.
-- [ ] Procure todas as ocorrências de `[[` e confira se cada alvo existe.
-      Em `[[caminho/arquivo|texto]]`, o alvo é o caminho, não o texto. Em
+- [ ] Liste os arquivos `.md` do vault (fora de pastas ocultas e de `pessoal/`,
+      exceto `pessoal/README.md`).
+- [ ] Procure todas as ocorrências de `[[` fora de código e confira se cada alvo
+      existe. Em `[[caminho/arquivo|texto]]`, o alvo é o caminho, não o texto. Em
       `[[#Mês N — Tema]]`, o alvo é um título `##` da mesma nota, escrito igual.
+      Nos modelos, links de exemplo ficam entre crases e não contam.
 - [ ] Confirme que nenhum nome de arquivo aparece duas vezes no vault: wikilink
       resolve por nome, e duplicata torna o destino imprevisível. Única exceção:
-      `README.md` (raiz e `pessoal/`), que nunca é alvo de wikilink.
-- [ ] Wikilink só existe em `INICIO.md`, `areas/`, `cursos/` e `biblioteca/`, e
-      só nestas direções: `INICIO` → áreas e catálogo; área → `INICIO` e cursos da
-      área; curso → sua área e âncoras da própria nota; catálogo → `INICIO`.
+      `README.md` (raiz e `pessoal/`); o de `pessoal/` só é linkado pelo caminho
+      completo.
+- [ ] Cada wikilink segue a tabela de pai e filhos de `_meta/CONVENCOES.md`.
+- [ ] Nenhuma ponta solta: toda nota listada recebe link do pai (ou, no caso do
+      `README.md`, linka `INICIO`).
 - [ ] Nenhum link lateral: área para área, curso para curso, curso para catálogo,
-      catálogo para curso.
-- [ ] `_meta/`, `_templates/`, `AGENTS.md`, adaptadores e `README.md` citam caminhos
-      entre crases, sem `[[` fora de código.
+      catálogo para curso, nem atalho que pule o pai.
 
 ## 2. Links do README
 
-- [ ] Todo link interno do `README.md` usa
+- [ ] O único link relativo do `README.md` é para `INICIO.md`.
+- [ ] Os demais links internos usam
       `https://github.com/vnmartinez/alexandria/blob/main/<caminho>` e o caminho
-      existe no repositório. Nenhum link relativo (`](arquivo.md)`).
+      existe no repositório.
 
 ## 3. Contrato do curso
 
@@ -74,8 +78,8 @@ Vale para `biblioteca/catalogo.md`.
 - [ ] Nenhum `.pdf`, `.epub`, `.mobi` ou `.djvu` versionado.
 - [ ] `pessoal/` fora do git, exceto `pessoal/README.md`.
 - [ ] Arquivos obrigatórios presentes: `README.md`, `INICIO.md`, `AGENTS.md`,
-      `LICENSE`, `_meta/COMO-CONTRIBUIR.md`, `_meta/CONVENCOES.md`,
-      `_meta/FONTES.md`.
+      `LICENSE`, `_meta/sobre.md`, `_meta/COMO-CONTRIBUIR.md`,
+      `_meta/CONVENCOES.md`, `_meta/FONTES.md`, `_meta/VERIFICACAO.md`.
 - [ ] Nenhum script, binário ou caminho absoluto de máquina no repositório.
 
 ## 7. Conferência de leitura
@@ -83,5 +87,5 @@ Vale para `biblioteca/catalogo.md`.
 - [ ] Abrir `INICIO.md` no Obsidian e chegar a um mês do curso em três cliques
       (área → curso → mês pelo índice), sem link em vermelho.
 - [ ] Abrir o catálogo a partir de `INICIO.md` em um clique.
-- [ ] No grafo, com **Órfãos** desligado, ver só a árvore: `INICIO`, 7 áreas,
-      cursos e catálogo, sem ciclo.
+- [ ] No grafo, com **Órfãos** ligado, nenhum nó solto e nenhum nó fantasma
+      (alvo inexistente): só a árvore a partir de `INICIO`, sem ciclo.

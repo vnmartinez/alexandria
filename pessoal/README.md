@@ -1,3 +1,5 @@
+↑ [[INICIO|Alexandria]]
+
 # Sua área pessoal
 
 Esta pasta é sua e **não vai para o git**. Tudo aqui fica só no seu computador,

@@ -1,8 +1,23 @@
+↑ [[_meta/sobre|Sobre o vault]]
+
 # Como contribuir
 
 Correções, novas obras no catálogo e cursos de outras áreas são bem-vindos. O
 repositório é só Markdown: dá para contribuir pelo próprio GitHub, sem instalar
 nada.
+
+## Documentos de contribuição
+
+- [[_meta/CONVENCOES|Convenções]] — nomes, formato, regras de link e formato de
+  curso e catálogo.
+- [[_meta/FONTES|Política de fontes]] — o que pode entrar no catálogo.
+- [[_meta/VERIFICACAO|Checklist de verificação]] — conferência antes do commit.
+
+## Modelos
+
+- [[_templates/area|Modelo de área]] (`_templates/area.md`)
+- [[_templates/curso|Modelo de curso]] (`_templates/curso.md`)
+- [[_templates/anotacao|Modelo de anotação]] (`_templates/anotacao.md`)
 
 ## Antes de começar
 
