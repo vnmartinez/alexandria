@@ -1,357 +1,111 @@
-# Alexandria — design do vault público de estudos
+# Alexandria — desenho do vault (revisão 2)
 
-Data: 2026-10-27
-Status: aprovado para implementação
+Data: 2026-10-27 · Status: aprovado pelo usuário (decisões 1–14 do handoff)
+Substitui a revisão 1 (curso multiarquivo, notas de livro, verificação por script).
 
-## 1. Objetivo
+## Objetivo
 
-`alexandria` é um vault Obsidian público, clonável, que organiza trilhas de estudo
-autodidata por área de conhecimento. O usuário clona o repositório, abre no Obsidian
-(ou lê no GitHub) e navega de um nó central até o curso, os módulos, as leituras e os
-exercícios. Também pode abrir o vault no diretório onde roda um agente de código
-(Claude Code, Codex, OpenCode, Gemini CLI, Copilot) e usar o agente como tutor.
+Vault Obsidian público e clonável com trilhas de estudo autodidata por área de
+conhecimento. O aluno clona, abre no Obsidian e navega: nó central → área → curso.
+O mesmo repositório serve de contexto para agentes de IA (Claude Code, Codex,
+OpenCode, Gemini CLI, Copilot), que atuam como tutores seguindo `AGENTS.md`.
 
-Primeira entrega: curso completo de **Psicologia** (12 módulos), com catálogo de
-livros, exercícios e camada de agentes. A estrutura suporta novas áreas e cursos sem
-mudança de arquitetura.
+V1: curso completo de Psicologia em 12 meses, derivado do plano de estudos do
+usuário, com a regra de estudar método científico antes de Freud e psicopatologia.
 
-## 2. Não-objetivos
+## Restrições
 
-- Não emite certificado nem substitui graduação; todo curso traz aviso explícito.
-- Não hospeda PDF ou cópia de obra protegida. Só links para fontes legais.
-- Não depende de plugin da comunidade do Obsidian.
-- Não implementa aplicativo, site ou backend. É repositório de arquivos Markdown.
-- Não inclui script, binário ou qualquer dependência de sistema operacional: o vault
-  abre igual no Windows, no macOS e no Linux.
-- Não inclui diagnóstico, prescrição ou orientação clínica, nem pelo conteúdo nem
-  pelos agentes.
+- Só Markdown. Nenhum script, binário, `.ps1`, caminho absoluto de máquina nem
+  comando específico de sistema operacional. Abre igual em Windows, macOS e Linux.
+- Zero plugin da comunidade. `<details>` é permitido para recolher gabarito.
+- Nenhum PDF, EPUB, MOBI ou DJVU. O catálogo guarda metadados, licença e link legal;
+  obra paga é `compra` ou `biblioteca`, nunca link de cópia.
+- Nomes de pasta e arquivo em `kebab-case` ASCII minúsculo, únicos no vault.
+- Português do Brasil; H1 legível.
+- Texto próprio sob CC BY-SA 4.0.
+- `pessoal/` é do aluno e fica fora do git (só `pessoal/README.md` é versionado).
 
-## 3. Decisões
-
-| Decisão | Escolha | Motivo |
-|---|---|---|
-| Profundidade do curso | Trilha completa: hub, módulos, leituras, exercícios | É o caso de uso principal |
-| PDFs | Nenhum no repositório; apenas links legais | Repo público: risco de takedown e de conta |
-| Anotações do aluno | `pessoal/`, fora do git | `git pull` limpo para leigos |
-| Plugins | Markdown puro + plugins nativos; índices escritos à mão | Funciona no Obsidian, no GitHub e em qualquer editor |
-| Biblioteca | Catálogo central com uma nota por livro; cursos referenciam por wikilink | Livro usado em dois cursos não duplica |
-| Hierarquia | Nó central → 7 áreas → cursos → módulos | Pedido do usuário |
-| Áreas | Humanas, Exatas, Natureza, Saúde, Aplicadas, Engenharias, Artes e Letras | Cobre o espectro sem nós demais |
-| Posição da Psicologia | `humanas`, com link cruzado em `saude` | Ciência humana com interface de saúde |
-| Exercícios | Seção no módulo, gabarito recolhido em `<details>` | Aluno se testa antes de ver a resposta |
-| Agentes | `AGENTS.md` canônico + adaptadores curtos + playbooks | Sem duplicação de regra |
-| Licença do texto próprio | CC BY-SA 4.0 | Vault aberto, cópia permitida com atribuição |
-
-## 4. Estrutura de pastas
+## Estrutura
 
 ```
 alexandria/
-├── README.md                      # entrada no GitHub; links relativos
-├── INICIO.md                      # nó central do vault
-├── AGENTS.md                      # regras canônicas para agentes de IA
-├── CLAUDE.md                      # adaptador → AGENTS.md
-├── GEMINI.md                      # adaptador → AGENTS.md
-├── LICENSE                        # CC BY-SA 4.0 (texto próprio)
-├── .gitignore
-├── .github/
-│   └── copilot-instructions.md    # adaptador → AGENTS.md
-├── areas/
-│   ├── humanas.md
-│   ├── exatas.md
-│   ├── natureza.md
-│   ├── saude.md
-│   ├── aplicadas.md
-│   ├── engenharias.md
-│   └── artes-e-letras.md
-├── cursos/
-│   └── humanas/
-│       └── psicologia/
-│           ├── 00-comece-aqui.md
-│           ├── 01-fundamentos-e-historia.md
-│           ├── 02-metodo-cientifico-e-neurociencia.md
-│           ├── 03-aprendizagem-e-comportamento.md
-│           ├── 04-cognicao-memoria-e-inteligencia.md
-│           ├── 05-emocoes-e-motivacao.md
-│           ├── 06-desenvolvimento-humano.md
-│           ├── 07-personalidade-e-diferencas-individuais.md
-│           ├── 08-psicologia-social.md
-│           ├── 09-psicopatologia.md
-│           ├── 10-abordagens-da-psicoterapia.md
-│           ├── 11-psicanalise-e-teorias-aprofundadas.md
-│           └── 12-psicologia-aplicada-e-integracao.md
-├── biblioteca/
-│   ├── catalogo.md                # todos os livros, agrupados por área
-│   └── humanas/
-│       ├── openstax-psychology-2e.md
-│       ├── noba-project.md
-│       ├── introduction-to-psychology-umn.md
-│       ├── research-methods-in-psychology-wsu.md
-│       ├── james-principles-of-psychology.md
-│       ├── freud-conferencias-introdutorias.md
-│       ├── myers-psicologia.md
-│       ├── kahneman-rapido-e-devagar.md
-│       ├── dsm-5-tr.md
-│       └── manual-de-publicacao-apa.md
-├── _templates/
-│   ├── area.md
-│   ├── curso.md
-│   ├── modulo.md
-│   ├── livro.md
-│   └── anotacao.md
-├── _meta/
-│   ├── COMO-CONTRIBUIR.md
-│   ├── CONVENCOES.md
-│   ├── FONTES.md
-│   ├── agentes/
-│   │   ├── tutor.md
-│   │   ├── avaliador.md
-│   │   └── plano.md
-│   └── VERIFICACAO.md
-├── pessoal/
-│   └── README.md                  # único arquivo versionado da pasta
-└── docs/
-    └── superpowers/
-        ├── specs/
-        │   └── 2026-10-27-alexandria-vault-design.md
-        └── plans/
-            └── 2026-10-27-alexandria-vault.md
+├── README.md                 entrada no GitHub (links por URL, sem aresta no grafo)
+├── INICIO.md                 nó central
+├── AGENTS.md                 regras canônicas dos agentes
+├── CLAUDE.md, GEMINI.md, .github/copilot-instructions.md   adaptadores
+├── LICENSE, .gitignore
+├── areas/<area>.md           7 hubs
+├── cursos/humanas/psicologia.md   curso em nota única
+├── biblioteca/catalogo.md    catálogo em nota única
+├── _templates/               area.md, curso.md, anotacao.md
+├── _meta/                    COMO-CONTRIBUIR, CONVENCOES, FONTES, VERIFICACAO, agentes/
+├── pessoal/README.md
+└── docs/superpowers/         spec, plano, handoff
 ```
 
-## 5. Convenções
+As 7 áreas: `humanas`, `exatas`, `natureza`, `saude`, `aplicadas`, `engenharias`,
+`artes-e-letras`. Psicologia fica em `humanas`.
 
-- Pastas e arquivos: `kebab-case`, ASCII, minúsculas. Acentos e `ç` ficam no conteúdo,
-  nunca no nome do arquivo.
-- Nome de arquivo é único no vault inteiro (exigência de `[[wikilink]]`).
-- Módulos ordenados por prefixo numérico de dois dígitos.
-- H1 em português, com o nome legível (`# Mês 1 — Fundamentos e História`).
-- Um assunto por nota; nota acima de ~150 linhas deve ser dividida.
-- Idioma do conteúdo: português. Títulos de obras estrangeiras mantêm o original.
-- Pasta é a fonte de verdade da hierarquia. Tags existem só como apoio:
-  `#tipo/livro`, `#tipo/exercicio`, `#area/humanas`, `#curso/psicologia`.
+## Grafo e regras de link
 
-## 6. Frontmatter
+O grafo do Obsidian tem de ser uma árvore esparsa, sem ciclos nem emaranhado.
 
-Mínimo e estável, para não quebrar quando o vault ganhar automação.
+| De | Para | Tipo |
+|---|---|---|
+| `INICIO.md` | 7 `areas/*` e `biblioteca/catalogo` | filhos |
+| `areas/<area>.md` | `INICIO` (pai) e cursos da área (filhos) | hub |
+| `cursos/<area>/<curso>.md` | área (pai); âncoras internas `[[#Mês N — …]]` | hub + seções |
+| `biblioteca/catalogo.md` | `INICIO` (pai); só links externos de acesso | folha |
 
-**Área**
-```yaml
----
-area: humanas
----
-```
+Proibido: link lateral entre áreas, curso cruzado, link de livro para curso, link de
+curso para o catálogo (o curso cita livros em texto e indica o catálogo em código),
+wikilink em `_templates/`, `_meta/`, `AGENTS.md`, adaptadores e `README.md`. Esses
+arquivos citam caminhos entre crases e ficam órfãos no grafo; com o filtro "Órfãos"
+desligado, o grafo mostra só a árvore: 1 central, 7 áreas, 1 curso, 1 catálogo.
 
-**Curso**
-```yaml
----
-area: humanas
-curso: psicologia
-nivel: introdutorio
-carga-semanal: 5-7h
-duracao: 12 meses
-atualizado: 2026-10-27
----
-```
+O `README.md` usa URLs absolutas do GitHub (`https://github.com/vnmartinez/alexandria/blob/main/...`)
+para navegar no site sem criar arestas no grafo.
 
-**Módulo**
-```yaml
----
-curso: psicologia
-area: humanas
-ordem: 1
-duracao: 4 semanas
-atualizado: 2026-10-27
----
-```
+## Contrato do curso (nota única)
 
-**Livro**
-```yaml
----
-titulo: Psychology 2e
-autor: OpenStax
-ano: 2020
-idioma: en
-nivel: introdutorio
-licenca: CC BY 4.0
-obtencao: gratuito
-acesso: https://openstax.org/details/books/psychology-2e
-verificado: 2026-10
----
-```
+1. Frontmatter: `area`, `curso`, `nivel`, `carga-semanal`, `duracao`, `atualizado`.
+2. Link para a área (pai), H1, para quem é, aviso de que não equivale a graduação nem
+   habilita ao exercício profissional.
+3. Carga e ritmo, rotina semanal, índice dos 12 meses por âncora.
+4. Bibliografia: obrigatórias e opcionais com capítulos por mês, em texto.
+5. Para cada mês, `## Mês N — Tema` com, nesta ordem: `### Objetivo`,
+   `### Tópicos` (checkboxes `- [ ] N.`, ao menos 10), `### Leituras`,
+   `### Conceitos-chave`, `### Exercícios` (8–10: 3 múltipla escolha, 3 discursivas,
+   2–4 de aplicação; gabarito único por mês em `<details><summary>Gabarito</summary>`),
+   `### Resultado esperado`, `### Anotações` (aponta `pessoal/<area>/<curso>/`),
+   e a linha de navegação para o mês seguinte por âncora.
+6. `## Conclusão`: critério de conclusão do curso.
 
-`obtencao` aceita `gratuito`, `compra` ou `biblioteca`. Quando não for `gratuito`, a
-nota explica onde comprar ou pegar emprestado, sem link para cópia irregular.
+## Contrato do catálogo (nota única)
 
-## 7. Anatomia das notas
+Uma seção `## <Área>` por área com obras e uma seção `### <Título>` por obra, com
+lista de campos: autor, ano, idioma, nível, licença, obtenção
+(`gratuito|compra|biblioteca`), acesso (URL verificada ou instrução de compra),
+verificado (`AAAA-MM`) e "Por que ler" em 1–3 linhas. Nunca inventar URL: link que
+não abre é trocado por outra obra aberta.
 
-### 7.1 `INICIO.md` — nó central
+## Camada de agentes
 
-Título, uma frase sobre o projeto, tabela das 7 áreas com link e contagem de cursos,
-seção "Como estudar" (clonar → abrir no Obsidian → escolher área → curso → módulo),
-seção "Como estudar com um agente de IA" (abrir o vault no agente; o agente lê
-`AGENTS.md`), aviso legal e link para `README.md`, `_meta/COMO-CONTRIBUIR.md`,
-`_meta/FONTES.md`.
+- `AGENTS.md`: fonte única. Papel de tutor, mapa do vault, regras de navegação,
+  limites (não diagnosticar, não prescrever, não substituir atendimento, citar só o
+  catálogo ou fonte verificável, não inventar referência, não sugerir pirataria),
+  escrita apenas em `pessoal/`, como verificar.
+- `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`: apontam para
+  `AGENTS.md` sem repetir regras.
+- `_meta/agentes/tutor.md`, `avaliador.md`, `plano.md`: playbooks por tarefa.
 
-### 7.2 `areas/<area>.md` — hub de área
+## Verificação
 
-O que a área cobre, tabela de cursos (nome, nível, duração, link), seção "Cursos
-cruzados" quando houver (ex.: `saude` aponta para psicologia), e "Nenhum curso ainda"
-seguido de instrução curta de como adicionar um.
+Checklist manual em `_meta/VERIFICACAO.md`, executável por pessoa ou agente, sem
+script. Cobre links internos, links do README, contrato do curso, contrato do
+catálogo, áreas, higiene do repositório e conferência de leitura no Obsidian.
 
-### 7.3 `cursos/<area>/<curso>/00-comece-aqui.md` — hub do curso
+## Fora do escopo da v1
 
-Frontmatter de curso; o que é o curso e para quem; aviso de que não equivale a
-graduação nem habilita ao exercício profissional; carga semanal; tabela dos módulos
-(mês, tema, link); leituras obrigatórias e opcionais (wikilink para `biblioteca/`);
-rotina semanal sugerida; critério de conclusão ("explicar, comparar teorias,
-identificar evidências contrárias, aplicar sem extrapolar"); link para
-`pessoal/<area>/<curso>/progresso.md`.
-
-### 7.4 Módulo
-
-Ordem fixa:
-
-1. `## Objetivo` — uma a três frases.
-2. `## Tópicos` — lista numerada com checkbox (`- [ ]`), 8–14 itens.
-3. `## Leituras` — wikilink para cada livro com capítulos ou seções específicas.
-4. `## Conceitos-chave` — 5–10 termos com definição de uma linha.
-5. `## Exercícios` — ver seção 8.
-6. `## Resultado esperado` — o que o aluno deve conseguir fazer.
-7. `## Anotações` — instrução curta: anotar em `pessoal/<area>/<curso>/<slug>.md`.
-8. `## Próximo` — link para o módulo seguinte (ou "fim do curso" no 12).
-
-### 7.5 `biblioteca/<area>/<livro>.md` — livro
-
-Tabela de metadados espelhando o frontmatter, "Por que ler" (2–4 linhas), "Como
-acessar" (link direto, ou instrução de compra/empréstimo), "Capítulos por módulo"
-(tabela módulo → capítulo), "Limitações ou vieses" quando relevante, e `## Relacionado`
-com cursos que usam o livro.
-
-### 7.6 `biblioteca/catalogo.md`
-
-Tabela única, agrupada por área, com colunas: título, autor, nível, licença, acesso,
-cursos. É o índice que o aluno folheia quando não sabe o que ler.
-
-### 7.7 `pessoal/` — área do aluno
-
-`pessoal/README.md` (versionado) explica: a pasta é local, não vai para o git; crie
-`pessoal/<area>/<curso>/`; use `_templates/anotacao.md`; o progresso fica em
-`progresso.md` com checkboxes espelhando os tópicos do módulo. O restante de
-`pessoal/` é ignorado pelo git.
-
-## 8. Exercícios
-
-Cada módulo traz `## Exercícios` com 8–10 itens:
-
-- 3 de múltipla escolha (4 alternativas, uma correta);
-- 3 discursivas curtas (resposta de 3 a 6 linhas);
-- 2 de aplicação a um caso concreto descrito no enunciado.
-
-Formato: enunciado numerado; alternativas em lista `a)`–`d)`; gabarito em bloco
-`<details><summary>Gabarito</summary>` com resposta, explicação de 2–4 linhas e o
-tópico ou leitura de referência. `<details>` fica recolhido no Obsidian e no GitHub,
-então o aluno se testa antes de ler a resposta.
-
-Exercícios não copiam questão de livro protegido: são autorais, sobre conceitos do
-módulo.
-
-## 9. Camada de agentes de IA
-
-### 9.1 `AGENTS.md` (canônico)
-
-Seções: papel de tutor; como navegar (ler `INICIO.md` → hub de área → hub do curso →
-módulo atual, nunca varrer o vault inteiro); limites (não diagnosticar, não prescrever,
-não simular sessão clínica, não afirmar competência profissional); fontes (usar o
-catálogo, citar livro e capítulo, nunca inventar referência, respeitar licença, não
-sugerir pirataria); exercícios (corrigir por rubrica, apontar lacuna, indicar revisão);
-anotações (escrever só em `pessoal/`; nunca alterar conteúdo versionado sem pedido
-explícito); idioma (pt-BR, termos técnicos no original quando necessário); formato de
-resposta (curto, direto, com links do vault).
-
-### 9.2 Adaptadores
-
-`CLAUDE.md`, `GEMINI.md` e `.github/copilot-instructions.md` têm 5–10 linhas: apontam
-para `AGENTS.md`, registram que ele é a fonte única e não repetem regra.
-
-### 9.3 `_meta/agentes/`
-
-- `tutor.md` — explicar em camadas (intuição → definição → exemplo → exceção),
-  checar entendimento com uma pergunta antes de avançar, usar analogia só quando
-  levar de volta ao conceito.
-- `avaliador.md` — rubrica de correção, o que conta como lacuna, como registrar
-  resultado em `pessoal/`, quando mandar revisar o módulo.
-- `plano.md` — montar plano de N semanas a partir de um curso do vault, redistribuindo
-  módulos e leituras sem alterar o conteúdo original.
-
-## 10. Navegação e compatibilidade
-
-- No Obsidian: tudo por `[[wikilink]]`.
-- No GitHub: `README.md` repete o caminho com links relativos (`cursos/humanas/...`),
-  porque wikilink não renderiza.
-- Nenhum recurso depende de plugin da comunidade. `_templates/` é lido pelo plugin
-  nativo Templates; quem não o usa copia o arquivo à mão.
-- `<details>` é HTML aceito nos dois ambientes.
-
-## 11. Conteúdo da v1
-
-- 12 módulos de Psicologia derivados de `plano_estudos_psicologia_12_meses.md`,
-  preservando tópicos, objetivos, resultados esperados, rotina de 6 h/semana e o
-  princípio orientador (método científico antes de Freud e psicopatologia).
-- Catálogo com 10 livros: prioridade para acesso aberto e legal (OpenStax, Noba,
-  Open Textbook Library, Project Gutenberg) e marcação explícita de obra paga
-  (Myers, Kahneman, DSM-5-TR, manual APA). Todo link é verificado na implementação e
-  recebe `verificado:` com o mês.
-- 6 áreas começam vazias, com hub e instrução; apenas `humanas` tem curso.
-
-## 12. Licença e uso de terceiros
-
-Texto próprio do vault: CC BY-SA 4.0. Obras citadas mantêm seus direitos; o vault
-publica metadados e links, nunca o conteúdo protegido. `_meta/FONTES.md` registra a
-política e o contato para remoção caso algum link seja contestado.
-
-## 13. Verificação
-
-A verificação é uma checklist em Markdown, `_meta/VERIFICACAO.md`, sem código e sem
-dependência de sistema operacional. Ela cobre:
-
-1. **Links internos:** todo `[[alvo]]` ou `[[alvo|alias]]` corresponde a um arquivo
-   existente e não há dois arquivos com o mesmo nome.
-2. **Links relativos:** todo `](caminho.md)` do `README.md` aponta para arquivo real.
-3. **Contrato do módulo:** frontmatter da seção 6, as 8 seções na ordem, mínimo de 8
-   tópicos com checkbox, 8–10 exercícios numerados, gabarito em `<details>` e
-   instrução de anotações em `pessoal/`.
-4. **Contrato do livro:** frontmatter da seção 6, "Por que ler", "Como acessar" e
-   "Capítulos por módulo".
-5. **Contrato do curso e da área:** 12 links de módulo e aviso de que não habilita ao
-   exercício profissional; área com `area:` no frontmatter.
-6. **Higiene:** nenhum PDF/EPUB versionado, `pessoal/` fora do git, todo `acesso:`
-   externo com `verificado:` preenchido.
-
-Quem executa: uma pessoa no Obsidian (o painel de links não resolvidos do grafo
-mostra wikilinks sem destino) ou um agente de IA, que faz as mesmas conferências com
-as ferramentas que já tem — nenhuma instalação é necessária. O resultado esperado é
-zero pendência antes do commit.
-
-## 14. Critérios de aceitação
-
-- `git clone` + abrir no Obsidian mostra `INICIO.md` e a navegação completa até os 12
-  módulos e os 10 livros, sem plugin instalado.
-- Cada módulo tem as 8 seções e 8–10 exercícios com gabarito recolhido.
-- Nenhum PDF ou cópia de obra protegida no repositório.
-- `AGENTS.md` + adaptadores presentes; um agente aberto no vault encontra as regras
-  sem instrução extra do usuário.
-- `_meta/VERIFICACAO.md` executada de ponta a ponta sem pendência.
-- Nenhum script, binário ou arquivo específico de sistema operacional no repositório.
-- `pessoal/` ignorado, exceto `pessoal/README.md`.
-- Conteúdo em português, nomes de arquivo em ASCII.
-
-## 15. Riscos e mitigação
-
-| Risco | Mitigação |
-|---|---|
-| Link externo morre | Campo `verificado:` por livro; a checklist cobre só links internos, então a revisão externa é periódica e documentada em `FONTES.md` |
-| Nome de arquivo repetido quebra wikilink | Convenção de unicidade + item obrigatório da checklist |
-| Aluno edita conteúdo versionado e cria conflito | Progresso e anotações em `pessoal/`; aviso no `pessoal/README.md` |
-| Agente inventa referência | `AGENTS.md` exige citar só o catálogo; `avaliador.md` e `tutor.md` repetem a regra |
-| Vault vira depósito de link pirata | `FONTES.md` define critério e `COMO-CONTRIBUIR.md` exige licença no frontmatter |
-| Escopo cresce para 7 áreas completas | Só `humanas/psicologia` na v1; demais áreas são hubs |
-```
+Cursos das outras 6 áreas; tradução; site estático; plugins; arquivos de
+configuração do Obsidian versionados.
