@@ -21,6 +21,8 @@ mudança de arquitetura.
 - Não hospeda PDF ou cópia de obra protegida. Só links para fontes legais.
 - Não depende de plugin da comunidade do Obsidian.
 - Não implementa aplicativo, site ou backend. É repositório de arquivos Markdown.
+- Não inclui script, binário ou qualquer dependência de sistema operacional: o vault
+  abre igual no Windows, no macOS e no Linux.
 - Não inclui diagnóstico, prescrição ou orientação clínica, nem pelo conteúdo nem
   pelos agentes.
 
@@ -104,14 +106,15 @@ alexandria/
 │   │   ├── tutor.md
 │   │   ├── avaliador.md
 │   │   └── plano.md
-│   └── scripts/
-│       └── verificar-links.ps1
+│   └── VERIFICACAO.md
 ├── pessoal/
 │   └── README.md                  # único arquivo versionado da pasta
 └── docs/
     └── superpowers/
-        └── specs/
-            └── 2026-10-27-alexandria-vault-design.md
+        ├── specs/
+        │   └── 2026-10-27-alexandria-vault-design.md
+        └── plans/
+            └── 2026-10-27-alexandria-vault.md
 ```
 
 ## 5. Convenções
@@ -307,17 +310,26 @@ política e o contato para remoção caso algum link seja contestado.
 
 ## 13. Verificação
 
-`_meta/scripts/verificar-links.ps1` (PowerShell, sem dependência):
+A verificação é uma checklist em Markdown, `_meta/VERIFICACAO.md`, sem código e sem
+dependência de sistema operacional. Ela cobre:
 
-1. Varre todos os `.md` versionados.
-2. Extrai `[[alvo]]` e `[[alvo|alias]]`, compara com nomes de arquivo sem extensão
-   (case-insensitive) e lista alvos inexistentes.
-3. Verifica links markdown relativos (`](caminho.md)`) e lista arquivos ausentes.
-4. Falha com código de saída 1 quando houver quebra.
+1. **Links internos:** todo `[[alvo]]` ou `[[alvo|alias]]` corresponde a um arquivo
+   existente e não há dois arquivos com o mesmo nome.
+2. **Links relativos:** todo `](caminho.md)` do `README.md` aponta para arquivo real.
+3. **Contrato do módulo:** frontmatter da seção 6, as 8 seções na ordem, mínimo de 8
+   tópicos com checkbox, 8–10 exercícios numerados, gabarito em `<details>` e
+   instrução de anotações em `pessoal/`.
+4. **Contrato do livro:** frontmatter da seção 6, "Por que ler", "Como acessar" e
+   "Capítulos por módulo".
+5. **Contrato do curso e da área:** 12 links de módulo e aviso de que não habilita ao
+   exercício profissional; área com `area:` no frontmatter.
+6. **Higiene:** nenhum PDF/EPUB versionado, `pessoal/` fora do git, todo `acesso:`
+   externo com `verificado:` preenchido.
 
-Checklist manual antes de cada entrega: abrir `INICIO.md` no Obsidian e chegar até
-um livro em 3 cliques; rodar o script sem erro; conferir que `pessoal/` não aparece
-no `git status`; conferir que nenhum arquivo de PDF foi adicionado.
+Quem executa: uma pessoa no Obsidian (o painel de links não resolvidos do grafo
+mostra wikilinks sem destino) ou um agente de IA, que faz as mesmas conferências com
+as ferramentas que já tem — nenhuma instalação é necessária. O resultado esperado é
+zero pendência antes do commit.
 
 ## 14. Critérios de aceitação
 
@@ -327,7 +339,8 @@ no `git status`; conferir que nenhum arquivo de PDF foi adicionado.
 - Nenhum PDF ou cópia de obra protegida no repositório.
 - `AGENTS.md` + adaptadores presentes; um agente aberto no vault encontra as regras
   sem instrução extra do usuário.
-- `verificar-links.ps1` termina com código 0.
+- `_meta/VERIFICACAO.md` executada de ponta a ponta sem pendência.
+- Nenhum script, binário ou arquivo específico de sistema operacional no repositório.
 - `pessoal/` ignorado, exceto `pessoal/README.md`.
 - Conteúdo em português, nomes de arquivo em ASCII.
 
@@ -335,8 +348,8 @@ no `git status`; conferir que nenhum arquivo de PDF foi adicionado.
 
 | Risco | Mitigação |
 |---|---|
-| Link externo morre | Campo `verificado:` por livro + script só cobre links internos; revisão periódica documentada em `FONTES.md` |
-| Nome de arquivo repetido quebra wikilink | Convenção de unicidade + script aponta ambiguidade |
+| Link externo morre | Campo `verificado:` por livro; a checklist cobre só links internos, então a revisão externa é periódica e documentada em `FONTES.md` |
+| Nome de arquivo repetido quebra wikilink | Convenção de unicidade + item obrigatório da checklist |
 | Aluno edita conteúdo versionado e cria conflito | Progresso e anotações em `pessoal/`; aviso no `pessoal/README.md` |
 | Agente inventa referência | `AGENTS.md` exige citar só o catálogo; `avaliador.md` e `tutor.md` repetem a regra |
 | Vault vira depósito de link pirata | `FONTES.md` define critério e `COMO-CONTRIBUIR.md` exige licença no frontmatter |
