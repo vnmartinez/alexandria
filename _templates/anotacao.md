@@ -1,10 +1,12 @@
 ---
 curso: <curso>
-modulo: <n>
+mes: <n>
 iniciado: <AAAA-MM-DD>
 ---
 
 # Anotações — Mês <n> — <Tema>
+
+Guarde esta nota em `pessoal/<area>/<curso>/mes-<nn>.md`. Ela não vai para o git.
 
 ## Progresso
 
