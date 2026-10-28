@@ -11,7 +11,8 @@
 ## Nomes
 
 - Pastas e arquivos em `kebab-case`, ASCII, minúsculos: `artes-e-letras.md`.
-- Nomes únicos no vault inteiro: wikilink resolve por nome.
+- Nomes únicos no vault inteiro: wikilink resolve por nome. Exceção: `README.md`,
+  que nunca é alvo de wikilink.
 - Cursos: `cursos/<area>/<curso>.md`. Áreas: `areas/<area>.md`.
 - Áreas válidas: `humanas`, `exatas`, `natureza`, `saude`, `aplicadas`,
   `engenharias`, `artes-e-letras`.

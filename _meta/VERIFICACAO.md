@@ -11,7 +11,8 @@ Windows, macOS ou Linux. "Verde" significa zero pendência.
       Em `[[caminho/arquivo|texto]]`, o alvo é o caminho, não o texto. Em
       `[[#Mês N — Tema]]`, o alvo é um título `##` da mesma nota, escrito igual.
 - [ ] Confirme que nenhum nome de arquivo aparece duas vezes no vault: wikilink
-      resolve por nome, e duplicata torna o destino imprevisível.
+      resolve por nome, e duplicata torna o destino imprevisível. Única exceção:
+      `README.md` (raiz e `pessoal/`), que nunca é alvo de wikilink.
 - [ ] Wikilink só existe em `INICIO.md`, `areas/`, `cursos/` e `biblioteca/`, e
       só nestas direções: `INICIO` → áreas e catálogo; área → `INICIO` e cursos da
       área; curso → sua área e âncoras da própria nota; catálogo → `INICIO`.
