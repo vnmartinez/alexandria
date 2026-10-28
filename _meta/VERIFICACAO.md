@@ -11,6 +11,8 @@ Windows, macOS ou Linux. "Verde" significa zero pendência.
       Em `[[caminho/arquivo|texto]]`, o alvo é o caminho, não o texto.
 - [ ] Confirme que nenhum nome de arquivo aparece duas vezes no vault: wikilink
       resolve por nome, e duplicata torna o destino imprevisível.
+- [ ] Deixe `_templates/` fora desta checagem: os modelos contêm `<placeholders>`
+      de propósito.
 
 ## 2. Links relativos do README
 
