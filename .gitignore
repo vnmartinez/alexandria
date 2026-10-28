@@ -1,0 +1,12 @@
+# Área pessoal do aluno: só o README é versionado
+pessoal/*
+!pessoal/README.md
+
+# Estado local do Obsidian
+.obsidian/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
