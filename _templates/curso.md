@@ -1,9 +1,7 @@
 ---
 area: <area>
 curso: <curso>
-nivel: <introdutorio|intermediario|avancado>
-carga-semanal: <ex.: 5-7h>
-duracao: <ex.: 12 meses>
+nivel: <introdutorio|intermediario|avancado|introdutorio-a-avancado>
 atualizado: <AAAA-MM-DD>
 ---
 
@@ -16,44 +14,50 @@ atualizado: <AAAA-MM-DD>
 > Este percurso não equivale a uma graduação, não inclui prática supervisionada e
 > não habilita ao exercício profissional.
 
-## Carga e ritmo
+<!-- Sem previsão de tempo (carga, duração, semestre, mês): o ritmo é do aluno.
+     O curso define só a ordem dos módulos e as dependências entre eles. -->
 
-<Carga semanal, número de meses e tempo sugerido por mês.>
+## Como usar
 
-| Atividade | Horas/semana |
-|---|---:|
-| Leitura | <n> |
-| Exercícios | <n> |
+<Estude na ordem; comece um módulo só depois das dependências dele.>
+
+## Mapa de dependências
+
+| Módulo | Depende de |
+|---|---|
+| 1. <Tema> | — |
+| 2. <Tema> | 1 |
 
 ## Índice
 
-1. `[[#Mês 1 — <Tema>|Mês 1 — <Tema>]]`
-2. `[[#Mês 2 — <Tema>|Mês 2 — <Tema>]]`
+1. `[[#Módulo 1 — <Tema>|Módulo 1 — <Tema>]]`
+2. `[[#Módulo 2 — <Tema>|Módulo 2 — <Tema>]]`
 
 ## Bibliografia
 
 Cite as obras pelo título, em texto; metadados e links ficam em
 `biblioteca/catalogo.md`. Não crie link do curso para o catálogo.
 
-**Obrigatórias**
-
-| Obra | Meses e capítulos |
+| Obra | Módulos e capítulos |
 |---|---|
-| <Título> (<Autor>) | Mês 1: <cap.>; Mês 2: <cap.> |
+| <Título> (<Autor>) | 1: <cap.> · 2: <cap.> |
 
-**Opcionais**
+## Fontes
 
-| Obra | Meses e capítulos |
-|---|---|
-| <Título> (<Autor>) | Mês <n>: <cap.> |
+<Opcional: ementas e projetos pedagógicos consultados, com link oficial verificado
+e mês de verificação. Só aqui entram URLs.>
 
-<!-- Bloco de mês: copie da linha "## Mês" até "Próximo" para cada mês. -->
+<!-- Bloco de módulo: copie da linha "## Módulo" até "Próximo" para cada módulo. -->
 
-## Mês 1 — <Tema>
+## Módulo 1 — <Tema>
+
+**Depende de:** nenhum
+
+<!-- Nos módulos seguintes: **Depende de:** `[[#Módulo 1 — <Tema>|Módulo 1]]` -->
 
 ### Objetivo
 
-<Uma a três frases: o que o aluno deve compreender ao fim do mês.>
+<Uma a três frases: o que o aluno deve compreender ao fim do módulo.>
 
 ### Tópicos
 
@@ -65,19 +69,22 @@ Cite as obras pelo título, em texto; metadados e links ficam em
 - [ ] 6. <tópico>
 - [ ] 7. <tópico>
 - [ ] 8. <tópico>
-- [ ] 9. <tópico>
-- [ ] 10. <tópico>
 
 ### Leituras
 
-- <Título> — <capítulos/seções>.
-- Complementar: <Título> — <capítulos/seções>.
+- Básica: <Título> (<Autor>) — <capítulos/seções>.
+- Complementar: <Título> (<Autor>).
+- Alternativa aberta: <Título> (<Autor ou instituição>).
 
 ### Conceitos-chave
+
+<Opcional.>
 
 - **<termo>:** <definição de uma linha>.
 
 ### Exercícios
+
+<Opcional. Quando houver: de 8 a 10.>
 
 1. <múltipla escolha>
    - a) <alternativa>
@@ -108,9 +115,9 @@ Cite as obras pelo título, em texto; metadados e links ficam em
 
 ### Anotações
 
-Anote em `pessoal/<area>/<curso>/mes-01.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/<area>/<curso>/modulo-01.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: `[[#Mês 2 — <Tema>|Mês 2 — <Tema>]]`
+Próximo: `[[#Módulo 2 — <Tema>|Módulo 2 — <Tema>]]`
 
 ## Conclusão
 

@@ -2,82 +2,92 @@
 area: humanas
 curso: psicologia
 nivel: introdutorio
-carga-semanal: 5-7h
-duracao: 12 meses
-atualizado: 2026-10-27
+atualizado: 2026-10-28
 ---
 
 ↑ [[areas/humanas|Ciências Humanas]]
 
 # Psicologia
 
-Percurso autodidata de 12 meses para quem quer estudar Psicologia a sério sem
-cursar uma graduação: estudantes que querem uma base antes do vestibular,
-profissionais de outras áreas e curiosos com tempo para ler de 5 a 7 horas por
-semana. Não exige conhecimento prévio; exige leitura em inglês ou acesso ao livro
-de Myers em português.
+Percurso autodidata para quem quer estudar Psicologia a sério sem cursar uma
+graduação: estudantes que querem uma base antes do vestibular, profissionais de
+outras áreas e curiosos. Não exige conhecimento prévio; exige leitura em inglês ou
+acesso ao livro de Myers em português. O ritmo é seu: o curso define só a ordem
+dos conteúdos e o que depende de quê.
 
 > Este percurso não equivale a uma graduação, não inclui prática supervisionada e
 > não habilita ao exercício profissional da Psicologia no Brasil. Nada aqui serve
 > para diagnosticar ou tratar a si mesmo ou a outra pessoa.
 
 **Princípio orientador:** não comece por Freud, Jung, transtornos mentais ou
-psicoterapia. Os meses 1 a 8 constroem método científico, comportamento, cognição,
-desenvolvimento e vida social; só então os meses 9 a 11 tratam de sofrimento
-psíquico, terapias e psicanálise, com ferramentas para avaliá-los criticamente.
+psicoterapia. Os módulos 1 a 8 constroem método científico, comportamento,
+cognição, desenvolvimento e vida social; só então os módulos 9 a 11 tratam de
+sofrimento psíquico, terapias e psicanálise, com ferramentas para avaliá-los
+criticamente.
 
-## Carga e ritmo
+## Como usar
 
-12 meses, um tema por mês, cerca de 6 horas por semana. Cada mês tem de 10 a 14
-tópicos: avance de dois a três tópicos por semana e reserve a última semana para
-exercícios e revisão.
+Estude os módulos na ordem. Cada módulo indica de quais outros depende: comece um
+módulo só quando conseguir cumprir o "Resultado esperado" das dependências dele.
+Dentro do módulo, siga os tópicos, faça as leituras, resolva os exercícios antes
+de abrir o gabarito e confira o resultado esperado. Videoaulas de cursos abertos
+de universidades complementam, mas não substituem, a leitura.
 
-| Atividade | Horas/semana |
-|---|---:|
-| Leitura de livro-texto | 2 |
-| Videoaulas universitárias | 1 |
-| Leitura complementar | 1 |
-| Resumos e mapas conceituais | 1 |
-| Questões e revisão | 1 |
+## Mapa de dependências
 
-Videoaulas: prefira cursos abertos de universidades (as próprias páginas do
-OpenStax e do Noba indicam materiais). Elas complementam, não substituem a leitura.
+| Módulo | Depende de |
+|---|---|
+| 1. Fundamentos e história | — |
+| 2. Método científico e neurociência | 1 |
+| 3. Aprendizagem e comportamento | 2 |
+| 4. Cognição, memória e inteligência | 2 |
+| 5. Emoções e motivação | 2, 4 |
+| 6. Desenvolvimento humano | 3, 4 |
+| 7. Personalidade e diferenças individuais | 2, 6 |
+| 8. Psicologia social e relações humanas | 4, 5 |
+| 9. Psicopatologia | 2, 5, 7 |
+| 10. Abordagens da psicoterapia | 3, 9 |
+| 11. Psicanálise e teorias aprofundadas | 4, 7, 10 |
+| 12. Psicologia aplicada e integração | 2, 3, 4, 8 |
+
+O Módulo 12 integra todo o curso; as dependências listadas são as que ele usa
+diretamente.
 
 ## Índice
 
-1. [[#Mês 1 — Fundamentos e história|Mês 1 — Fundamentos e história]]
-2. [[#Mês 2 — Método científico e neurociência|Mês 2 — Método científico e neurociência]]
-3. [[#Mês 3 — Aprendizagem e comportamento|Mês 3 — Aprendizagem e comportamento]]
-4. [[#Mês 4 — Cognição, memória e inteligência|Mês 4 — Cognição, memória e inteligência]]
-5. [[#Mês 5 — Emoções e motivação|Mês 5 — Emoções e motivação]]
-6. [[#Mês 6 — Desenvolvimento humano|Mês 6 — Desenvolvimento humano]]
-7. [[#Mês 7 — Personalidade e diferenças individuais|Mês 7 — Personalidade e diferenças individuais]]
-8. [[#Mês 8 — Psicologia social e relações humanas|Mês 8 — Psicologia social e relações humanas]]
-9. [[#Mês 9 — Psicopatologia|Mês 9 — Psicopatologia]]
-10. [[#Mês 10 — Abordagens da psicoterapia|Mês 10 — Abordagens da psicoterapia]]
-11. [[#Mês 11 — Psicanálise e teorias aprofundadas|Mês 11 — Psicanálise e teorias aprofundadas]]
-12. [[#Mês 12 — Psicologia aplicada e integração|Mês 12 — Psicologia aplicada e integração]]
+1. [[#Módulo 1 — Fundamentos e história|Módulo 1 — Fundamentos e história]]
+2. [[#Módulo 2 — Método científico e neurociência|Módulo 2 — Método científico e neurociência]]
+3. [[#Módulo 3 — Aprendizagem e comportamento|Módulo 3 — Aprendizagem e comportamento]]
+4. [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4 — Cognição, memória e inteligência]]
+5. [[#Módulo 5 — Emoções e motivação|Módulo 5 — Emoções e motivação]]
+6. [[#Módulo 6 — Desenvolvimento humano|Módulo 6 — Desenvolvimento humano]]
+7. [[#Módulo 7 — Personalidade e diferenças individuais|Módulo 7 — Personalidade e diferenças individuais]]
+8. [[#Módulo 8 — Psicologia social e relações humanas|Módulo 8 — Psicologia social e relações humanas]]
+9. [[#Módulo 9 — Psicopatologia|Módulo 9 — Psicopatologia]]
+10. [[#Módulo 10 — Abordagens da psicoterapia|Módulo 10 — Abordagens da psicoterapia]]
+11. [[#Módulo 11 — Psicanálise e teorias aprofundadas|Módulo 11 — Psicanálise e teorias aprofundadas]]
+12. [[#Módulo 12 — Psicologia aplicada e integração|Módulo 12 — Psicologia aplicada e integração]]
 
 ## Bibliografia
 
 Metadados, licenças e links de acesso de cada obra estão no catálogo do vault
 (`biblioteca/catalogo.md`, aberto a partir do nó central). Aqui ficam só os
-capítulos por mês. Capítulos de Myers variam conforme a edição: use o sumário e
-procure o tema do mês.
+capítulos por módulo. Capítulos de Myers variam conforme a edição: use o sumário e
+procure o tema do módulo.
 
 **Obrigatórias**
 
-| Obra | Meses e capítulos |
+| Obra | Módulos e capítulos |
 |---|---|
 | Psychology 2e (OpenStax) | 1: cap. 1 · 2: cap. 2–3 · 3: cap. 6 · 4: cap. 5, 7, 8 · 5: cap. 10 e 14 · 6: cap. 9 · 7: cap. 11 · 8: cap. 12 · 9: cap. 15 · 10: cap. 16 · 11: seções 11.2–11.3 · 12: cap. 13 e seção 14.5 |
-| Noba Project | um ou mais módulos por mês, indicados em cada seção |
+| Noba Project | um ou mais módulos do Noba por módulo do curso, indicados em cada seção |
 | Research Methods in Psychology (Price et al.) | 2: cap. 1–2, 4, 12 · 12: cap. 3 |
 
 **Opcionais**
 
-| Obra | Meses e capítulos |
+| Obra | Módulos e capítulos |
 |---|---|
-| Psicologia (Myers e DeWall) | todos os meses: capítulo do tema, em português |
+| Psicologia (Myers e DeWall) | todos os módulos: capítulo do tema, em português |
 | Lifespan Development: A Psychological Perspective | 6: cap. 1–9 |
 | Principles of Social Psychology (Stangor) | 8: cap. 2, 5–10, 12 |
 | CID-11 — Classificação Internacional de Doenças | 9: capítulo 06 |
@@ -86,7 +96,9 @@ procure o tema do mês.
 | A General Introduction to Psychoanalysis (Freud) | 11: partes I–III |
 | Classics in the History of Psychology | 1: Watson (1913) · 3: Watson e Rayner (1920) |
 
-## Mês 1 — Fundamentos e história
+## Módulo 1 — Fundamentos e história
+
+**Depende de:** nenhum
 
 ### Objetivo
 
@@ -192,11 +204,13 @@ históricas de evidências científicas atuais.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-01.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-01.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 2 — Método científico e neurociência|Mês 2 — Método científico e neurociência]]
+Próximo: [[#Módulo 2 — Método científico e neurociência|Módulo 2 — Método científico e neurociência]]
 
-## Mês 2 — Método científico e neurociência
+## Módulo 2 — Método científico e neurociência
+
+**Depende de:** [[#Módulo 1 — Fundamentos e história|Módulo 1]]
 
 ### Objetivo
 
@@ -308,11 +322,13 @@ psicológicas quanto ao delineamento e à evidência.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-02.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-02.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 3 — Aprendizagem e comportamento|Mês 3 — Aprendizagem e comportamento]]
+Próximo: [[#Módulo 3 — Aprendizagem e comportamento|Módulo 3 — Aprendizagem e comportamento]]
 
-## Mês 3 — Aprendizagem e comportamento
+## Módulo 3 — Aprendizagem e comportamento
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]]
 
 ### Objetivo
 
@@ -381,7 +397,7 @@ ações em função do ambiente e das consequências.
 7. Faça a análise funcional (antecedente, comportamento, consequência) de alguém que
    checa o celular toda vez que sente tédio durante uma aula.
 8. Você quer criar o hábito de estudar 30 minutos por dia. Proponha um plano usando
-   pelo menos três conceitos do mês (por exemplo, reforço, pista ambiental,
+   pelo menos três conceitos do módulo (por exemplo, reforço, pista ambiental,
    modelagem por aproximações sucessivas).
 9. Por que as máquinas caça-níqueis são tão difíceis de abandonar? Responda com o
    conceito de esquema de reforço.
@@ -420,11 +436,13 @@ Explicar como o ambiente e as consequências das ações influenciam comportamen
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-03.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-03.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 4 — Cognição, memória e inteligência|Mês 4 — Cognição, memória e inteligência]]
+Próximo: [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4 — Cognição, memória e inteligência]]
 
-## Mês 4 — Cognição, memória e inteligência
+## Módulo 4 — Cognição, memória e inteligência
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]]
 
 ### Objetivo
 
@@ -496,7 +514,7 @@ Alan Baddeley.
    importantes deles?
 7. Descreva uma decisão de compra recente e identifique uma heurística ou viés que
    pode ter influenciado sua escolha.
-8. Monte uma rotina de estudo de uma semana usando o que você aprendeu sobre
+8. Monte uma rotina de estudo usando o que você aprendeu sobre
    codificação e recuperação (por exemplo, prática de recuperação e espaçamento).
 9. Um amigo diz: "Eu sou multitarefa, estudo vendo série e rendo igual". Use o
    conceito de atenção dividida para responder.
@@ -538,11 +556,13 @@ objetivos.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-04.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-04.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 5 — Emoções e motivação|Mês 5 — Emoções e motivação]]
+Próximo: [[#Módulo 5 — Emoções e motivação|Módulo 5 — Emoções e motivação]]
 
-## Mês 5 — Emoções e motivação
+## Módulo 5 — Emoções e motivação
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]], [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4]]
 
 ### Objetivo
 
@@ -645,11 +665,13 @@ Explicar como estados emocionais influenciam decisões, relações e comportamen
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-05.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-05.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 6 — Desenvolvimento humano|Mês 6 — Desenvolvimento humano]]
+Próximo: [[#Módulo 6 — Desenvolvimento humano|Módulo 6 — Desenvolvimento humano]]
 
-## Mês 6 — Desenvolvimento humano
+## Módulo 6 — Desenvolvimento humano
+
+**Depende de:** [[#Módulo 3 — Aprendizagem e comportamento|Módulo 3]], [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4]]
 
 ### Objetivo
 
@@ -754,11 +776,13 @@ psicológico ao longo da vida.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-06.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-06.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 7 — Personalidade e diferenças individuais|Mês 7 — Personalidade e diferenças individuais]]
+Próximo: [[#Módulo 7 — Personalidade e diferenças individuais|Módulo 7 — Personalidade e diferenças individuais]]
 
-## Mês 7 — Personalidade e diferenças individuais
+## Módulo 7 — Personalidade e diferenças individuais
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]], [[#Módulo 6 — Desenvolvimento humano|Módulo 6]]
 
 ### Objetivo
 
@@ -867,11 +891,13 @@ avaliar criticamente testes de personalidade.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-07.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-07.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 8 — Psicologia social e relações humanas|Mês 8 — Psicologia social e relações humanas]]
+Próximo: [[#Módulo 8 — Psicologia social e relações humanas|Módulo 8 — Psicologia social e relações humanas]]
 
-## Mês 8 — Psicologia social e relações humanas
+## Módulo 8 — Psicologia social e relações humanas
+
+**Depende de:** [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4]], [[#Módulo 5 — Emoções e motivação|Módulo 5]]
 
 ### Objetivo
 
@@ -938,7 +964,7 @@ Estude os experimentos clássicos junto com suas críticas metodológicas e éti
 7. Analise uma propaganda recente: ela usa a rota central ou a periférica de
    persuasão? Justifique com elementos da peça.
 8. Em um grupo de trabalho, todos concordam rápido com a proposta do chefe e ninguém
-   aponta riscos. Use conceitos do mês para explicar o que pode estar acontecendo e
+   aponta riscos. Use conceitos do módulo para explicar o que pode estar acontecendo e
    proponha duas medidas.
 9. Por que é importante estudar o "Experimento da Prisão de Stanford" junto com as
    críticas posteriores a ele?
@@ -979,18 +1005,20 @@ experimentos clássicos à luz das críticas.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-08.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-08.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 9 — Psicopatologia|Mês 9 — Psicopatologia]]
+Próximo: [[#Módulo 9 — Psicopatologia|Módulo 9 — Psicopatologia]]
 
-## Mês 9 — Psicopatologia
+## Módulo 9 — Psicopatologia
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]], [[#Módulo 5 — Emoções e motivação|Módulo 5]], [[#Módulo 7 — Personalidade e diferenças individuais|Módulo 7]]
 
 ### Objetivo
 
 Compreender alterações psicológicas e os principais grupos de transtornos mentais,
 sem confundir reconhecimento de sintomas com capacidade de diagnosticar.
 
-> Este mês trata de sofrimento psíquico. Estudar um transtorno não habilita a
+> Este módulo trata de sofrimento psíquico. Estudar um transtorno não habilita a
 > diagnosticar a si mesmo nem outra pessoa. Se você estiver em sofrimento, procure
 > um serviço de saúde (no Brasil, UBS ou CAPS) ou o CVV pelo telefone 188, gratuito
 > e disponível 24 horas.
@@ -1058,7 +1086,7 @@ sem confundir reconhecimento de sintomas com capacidade de diagnosticar.
 6. Diferencie transtornos de ansiedade de medo comum, segundo o livro-texto.
 7. Um vídeo viral lista "10 sinais de que você tem TDAH" e muitos comentários dizem
    "sou eu". Escreva uma resposta usando diagnóstico diferencial, critérios de
-   prejuízo e efeito Barnum (Mês 7).
+   prejuízo e efeito Barnum (Módulo 7).
 8. Escolha um grupo de transtornos estudado e organize, em três colunas, fatores
    biológicos, psicológicos e sociais associados a ele, segundo a leitura.
 9. Proponha duas ações de prevenção em saúde mental numa escola, indicando que
@@ -1103,11 +1131,13 @@ capacidade de diagnosticar.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-09.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-09.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 10 — Abordagens da psicoterapia|Mês 10 — Abordagens da psicoterapia]]
+Próximo: [[#Módulo 10 — Abordagens da psicoterapia|Módulo 10 — Abordagens da psicoterapia]]
 
-## Mês 10 — Abordagens da psicoterapia
+## Módulo 10 — Abordagens da psicoterapia
+
+**Depende de:** [[#Módulo 3 — Aprendizagem e comportamento|Módulo 3]], [[#Módulo 9 — Psicopatologia|Módulo 9]]
 
 ### Objetivo
 
@@ -1170,7 +1200,7 @@ sem presumir competência para aplicá-las clinicamente.
    - d) a idade do terapeuta
 4. Compare a TCC de Beck com a REBT de Ellis: o que têm em comum e no que diferem?
 5. Explique por que a exposição gradual funciona no tratamento de fobias, usando
-   conceitos do Mês 3.
+   conceitos do Módulo 3.
 6. Quais são os limites do sigilo profissional em psicoterapia e por que eles
    existem?
 7. Um conhecido diz: "Fiz um curso on-line de TCC no fim de semana, já posso atender
@@ -1218,11 +1248,13 @@ competência para aplicá-las clinicamente.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-10.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-10.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 11 — Psicanálise e teorias aprofundadas|Mês 11 — Psicanálise e teorias aprofundadas]]
+Próximo: [[#Módulo 11 — Psicanálise e teorias aprofundadas|Módulo 11 — Psicanálise e teorias aprofundadas]]
 
-## Mês 11 — Psicanálise e teorias aprofundadas
+## Módulo 11 — Psicanálise e teorias aprofundadas
+
+**Depende de:** [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4]], [[#Módulo 7 — Personalidade e diferenças individuais|Módulo 7]], [[#Módulo 10 — Abordagens da psicoterapia|Módulo 10]]
 
 ### Objetivo
 
@@ -1293,7 +1325,7 @@ reconhecendo que suas proposições têm diferentes níveis de sustentação cie
    a método, dados e critério de validação?
 7. Leia uma das conferências sobre atos falhos na parte I de Freud. Resuma um
    exemplo dado por ele e proponha uma explicação alternativa vinda da Psicologia
-   cognitiva (Mês 4).
+   cognitiva (Módulo 4).
 8. Uma pessoa diz: "A psicanálise foi refutada, não serve para nada". Outra diz:
    "A psicanálise explica tudo". Escreva uma posição equilibrada, separando
    influência histórica, valor clínico avaliado em pesquisas e proposições difíceis
@@ -1328,7 +1360,7 @@ reconhecendo que suas proposições têm diferentes níveis de sustentação cie
    foram confirmadas. Nem tudo nem nada.
 9. Resposta esperada (dois de): processamento inconsciente (Psicologia cognitiva,
    priming); mecanismos de defesa (estudos de enfrentamento); importância das
-   primeiras relações (teoria do apego, Mês 6); aliança e transferência (pesquisa em
+   primeiras relações (teoria do apego, Módulo 6); aliança e transferência (pesquisa em
    relação terapêutica).
 
 </details>
@@ -1340,11 +1372,13 @@ proposições têm diferentes níveis de sustentação científica.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-11.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-11.md` (modelo em `_templates/anotacao.md`).
 
-Próximo: [[#Mês 12 — Psicologia aplicada e integração|Mês 12 — Psicologia aplicada e integração]]
+Próximo: [[#Módulo 12 — Psicologia aplicada e integração|Módulo 12 — Psicologia aplicada e integração]]
 
-## Mês 12 — Psicologia aplicada e integração
+## Módulo 12 — Psicologia aplicada e integração
+
+**Depende de:** [[#Módulo 2 — Método científico e neurociência|Módulo 2]], [[#Módulo 3 — Aprendizagem e comportamento|Módulo 3]], [[#Módulo 4 — Cognição, memória e inteligência|Módulo 4]], [[#Módulo 8 — Psicologia social e relações humanas|Módulo 8]]
 
 ### Objetivo
 
@@ -1416,8 +1450,8 @@ identificar onde aprofundar.
    critérios do ano: delineamento, amostra, tamanho de efeito, replicação, quem
    financiou e se a manchete extrapola os dados.
 8. Explique a ansiedade diante de provas em quatro níveis (biológico, cognitivo,
-   comportamental e social), integrando pelo menos um conceito de cada mês entre os
-   meses 2, 3, 4 e 8.
+   comportamental e social), integrando pelo menos um conceito de cada módulo entre os
+   módulos 2, 3, 4 e 8.
 9. Monte seu plano pós-curso: dois campos que quer aprofundar, uma obra do catálogo
    para cada e uma pergunta que ainda não sabe responder.
 
@@ -1443,9 +1477,9 @@ identificar onde aprofundar.
    critérios, apontando se a manchete transforma correlação em causa ou ignora o
    tamanho do efeito.
 8. Resposta esperada: biológico — ativação do sistema nervoso simpático e da
-   amígdala (Mês 2); comportamental — esquiva reforçada negativamente (Mês 3);
+   amígdala (Módulo 2); comportamental — esquiva reforçada negativamente (Módulo 3);
    cognitivo — atenção capturada por ameaça e memória de trabalho sobrecarregada
-   (Mês 4); social — pressão do grupo e da família, comparação social (Mês 8). Boa
+   (Módulo 4); social — pressão do grupo e da família, comparação social (Módulo 8). Boa
    resposta mostra como os níveis interagem.
 9. Resposta esperada: plano pessoal com dois campos, obras do catálogo coerentes e
    perguntas abertas bem formuladas.
@@ -1459,17 +1493,17 @@ aprofundamento.
 
 ### Anotações
 
-Anote em `pessoal/humanas/psicologia/mes-12.md` (modelo em `_templates/anotacao.md`).
+Anote em `pessoal/humanas/psicologia/modulo-12.md` (modelo em `_templates/anotacao.md`).
 
 ## Conclusão
 
-Você conclui o curso quando, para cada mês, consegue:
+Você conclui o curso quando, para cada módulo, consegue:
 
 - explicar os conceitos-chave sem consultar;
 - comparar teorias concorrentes sobre o mesmo fenômeno;
 - identificar evidências favoráveis e contrárias a uma afirmação;
 - aplicar os conceitos a exemplos sem extrapolar os dados.
 
-Se algum mês não passar nesse teste, refaça os exercícios dele e releia as
-leituras indicadas. Depois disso, escolha um campo do Mês 12 para aprofundar ou
+Se algum módulo não passar nesse teste, refaça os exercícios dele e releia as
+leituras indicadas. Depois disso, escolha um campo do Módulo 12 para aprofundar ou
 considere a graduação, que é o caminho para atuar profissionalmente.

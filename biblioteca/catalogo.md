@@ -33,7 +33,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://nobaproject.com
 - **Verificado:** 2026-10
 - **Por que ler:** módulos curtos, cada um escrito por especialista no tema; servem
-  para aprofundar um tópico do mês sem abrir outro livro inteiro.
+  para aprofundar um tópico do módulo sem abrir outro livro inteiro.
 
 ### Research Methods in Psychology
 
@@ -43,7 +43,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://open.umn.edu/opentextbooks/textbooks/research-methods-in-psychology-3rd-american-edition
 - **Verificado:** 2026-10
 - **Por que ler:** método científico, medição, delineamentos e estatística descritiva
-  e inferencial explicados para quem começa; base do Mês 2.
+  e inferencial explicados para quem começa; base do Módulo 2 de Psicologia.
 
 ### Principles of Social Psychology
 
@@ -53,7 +53,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://open.umn.edu/opentextbooks/textbooks/principles-of-social-psychology
 - **Verificado:** 2026-10
 - **Por que ler:** cobre cognição social, atitudes, influência, relações, ajuda,
-  agressão, grupos e preconceito com mais profundidade que um livro geral (Mês 8).
+  agressão, grupos e preconceito com mais profundidade que um livro geral (Psicologia, Módulo 8).
 
 ### Lifespan Development: A Psychological Perspective
 
@@ -63,7 +63,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://open.umn.edu/opentextbooks/textbooks/lifespan-development-a-psychological-perspective
 - **Verificado:** 2026-10
 - **Por que ler:** percorre a vida inteira, da hereditariedade à velhice e à morte,
-  com um capítulo por fase (Mês 6).
+  com um capítulo por fase (Psicologia, Módulo 6).
 
 ### The Principles of Psychology
 
@@ -83,7 +83,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://www.gutenberg.org/ebooks/38219
 - **Verificado:** 2026-10
 - **Por que ler:** as conferências introdutórias em que o próprio Freud apresenta
-  atos falhos, sonhos e a teoria das neuroses; fonte primária do Mês 11.
+  atos falhos, sonhos e a teoria das neuroses; fonte primária do Módulo 11 de Psicologia.
 
 ### Classics in the History of Psychology
 
@@ -103,7 +103,7 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** https://icd.who.int/browse/2024-01/mms/pt
 - **Verificado:** 2026-10
 - **Por que ler:** classificação oficial usada no Brasil; o capítulo 06 (transtornos
-  mentais, comportamentais ou do neurodesenvolvimento) acompanha o Mês 9. Consulta,
+  mentais, comportamentais ou do neurodesenvolvimento) acompanha o Módulo 9 de Psicologia. Consulta,
   não autodiagnóstico.
 
 ### Psicologia
@@ -124,5 +124,5 @@ Veja `_meta/COMO-CONTRIBUIR.md`.
 - **Acesso:** procure pelo título nas livrarias ou em bibliotecas públicas
 - **Verificado:** 2026-10
 - **Por que ler:** heurísticas, vieses e decisão contados por um dos autores da
-  pesquisa (Mês 4). Alguns estudos citados não se replicaram; leia com o Mês 2 em
+  pesquisa (Psicologia, Módulo 4). Alguns estudos citados não se replicaram; leia com o Módulo 2 de Psicologia em
   mente.

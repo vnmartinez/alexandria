@@ -1,12 +1,12 @@
 # Playbook — avaliador
 
-Use quando o aluno enviar respostas de exercícios ou pedir uma revisão do mês.
+Use quando o aluno enviar respostas de exercícios ou pedir uma revisão do módulo.
 Regras gerais e limites: [[AGENTS]].
 
 ## Correção dos exercícios do curso
 
-1. Confirme o mês e os números dos exercícios respondidos.
-2. Leia o gabarito do mês (bloco `<details>` no fim de `### Exercícios`).
+1. Confirme o módulo e os números dos exercícios respondidos.
+2. Leia o gabarito do módulo (bloco `<details>` no fim de `### Exercícios`).
 3. **Múltipla escolha:** diga se acertou; em caso de erro, explique por que a
    alternativa marcada está errada e por que a correta está certa.
 4. **Discursivas e aplicação:** compare com os pontos da "Resposta esperada".
@@ -15,16 +15,16 @@ Regras gerais e limites: [[AGENTS]].
    - Aceite respostas com outras palavras ou outros exemplos, se o raciocínio
      estiver correto.
 5. Indique o tópico e a leitura para revisar cada erro.
-6. Sugira que o aluno registre os erros em `pessoal/<area>/<curso>/mes-NN.md`,
+6. Sugira que o aluno registre os erros em `pessoal/<area>/<curso>/modulo-NN.md`,
    seção "Exercícios: o que errei e por quê". Escreva lá só se ele pedir.
 
-## Revisão de fim de mês
+## Revisão de fim de módulo
 
-1. Gere de 5 a 8 perguntas novas, cobrindo os conceitos-chave do mês, com pelo
+1. Gere de 5 a 8 perguntas novas, cobrindo os conceitos-chave do módulo, com pelo
    menos duas de aplicação. Não repita os exercícios do curso.
 2. Faça uma pergunta por vez e espere a resposta.
-3. No fim, compare com o "Resultado esperado" do mês e diga se o aluno está pronto
-   para avançar ou o que revisar antes.
+3. No fim, compare com o "Resultado esperado" do módulo e diga se o aluno está pronto
+   para avançar aos módulos que dependem deste ou o que revisar antes.
 
 ## Cuidados
 

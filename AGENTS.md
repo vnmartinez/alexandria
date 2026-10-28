@@ -20,13 +20,13 @@ ele já entendeu antes de dar a resposta pronta.
 |---|---|
 | `INICIO.md` | Nó central: lista as 7 áreas e o catálogo |
 | `areas/<area>.md` | Hub de uma área; lista os cursos dela |
-| `cursos/<area>/<curso>.md` | Curso inteiro em uma nota; cada mês é `## Mês N — Tema` |
+| `cursos/<area>/<curso>.md` | Curso inteiro em uma nota; cada módulo é `## Módulo N — Tema`, com suas dependências |
 | `biblioteca/catalogo.md` | Obras com licença, forma de obtenção e link legal |
 | `_templates/` | Modelos de área, curso e anotação |
 | `_meta/` | Contribuição, convenções, fontes, checklist e playbooks de agente |
 | `pessoal/` | Área do aluno, fora do git |
 
-Curso publicado: `cursos/humanas/psicologia.md` (12 meses).
+Curso publicado: `cursos/humanas/psicologia.md` (12 módulos).
 
 ## Playbooks
 
@@ -34,12 +34,13 @@ Leia o playbook da tarefa antes de começar:
 
 - Explicar um tópico ou tirar dúvida: [[_meta/agentes/tutor|tutor]] (`_meta/agentes/tutor.md`)
 - Corrigir exercício ou aplicar revisão: [[_meta/agentes/avaliador|avaliador]] (`_meta/agentes/avaliador.md`)
-- Montar ou ajustar cronograma: [[_meta/agentes/plano|plano]] (`_meta/agentes/plano.md`)
+- Montar ou ajustar plano de estudo: [[_meta/agentes/plano|plano]] (`_meta/agentes/plano.md`)
 
 ## Como usar o conteúdo
 
-- Ancore explicações no mês e no tópico do curso ("Mês 3, tópico 4"). Siga a ordem
-  do curso: não antecipe temas de meses posteriores sem avisar o aluno.
+- Ancore explicações no módulo e no tópico do curso ("Módulo 3, tópico 4"). Siga a
+  ordem e as dependências do curso: não antecipe módulos cujas dependências o aluno
+  ainda não estudou sem avisar. O curso não define prazo; o ritmo é do aluno.
 - Respeite o princípio do curso de Psicologia: método científico, comportamento e
   cognição vêm antes de psicopatologia, psicoterapia e psicanálise.
 - Gabaritos ficam em `<details>`. Não revele o gabarito antes de o aluno tentar,

@@ -1,7 +1,7 @@
 # Alexandria
 
 Vault público de trilhas de estudo por área de conhecimento. Escolha uma área,
-entre em um curso e siga os meses na ordem. Tudo aqui é gratuito para ler,
+entre em um curso e siga os módulos na ordem. Tudo aqui é gratuito para ler,
 clonar e compartilhar; os livros permanecem com seus autores e editoras.
 
 ## Áreas
@@ -25,13 +25,14 @@ obra, com a indicação do que é gratuito e do que é comprado ou emprestado.
 
 1. Clone o repositório e abra a pasta como vault no Obsidian (sem plugin nenhum,
    em Windows, macOS ou Linux).
-2. Cada curso é uma nota única: o topo traz o plano e a bibliografia, e cada mês
-   é uma seção `## Mês N — Tema`. Use o índice do curso para pular de mês.
+2. Cada curso é uma nota única: o topo traz o mapa de dependências e a bibliografia,
+   e cada módulo é uma seção `## Módulo N — Tema`. Não há prazo: o ritmo é seu, e
+   cada módulo diz de quais outros depende.
 3. Registre o seu progresso em `pessoal/<area>/<curso>/`, usando o modelo de
    anotação — essa pasta não vai para o git e não gera conflito no `git pull`.
    Veja [[pessoal/README|Sua área pessoal]].
-4. Faça os exercícios do mês antes de abrir o gabarito.
-5. Ao fim do mês, confira o "Resultado esperado": se não conseguir explicar,
+4. Faça os exercícios do módulo antes de abrir o gabarito.
+5. Ao fim do módulo, confira o "Resultado esperado": se não conseguir explicar,
    refaça as leituras indicadas.
 
 ## Como estudar com um agente de IA

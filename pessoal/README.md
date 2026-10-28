@@ -15,13 +15,13 @@ pessoal/
 └── humanas/
     └── psicologia/
         ├── progresso.md
-        ├── mes-01.md
-        └── mes-02.md
+        ├── modulo-01.md
+        └── modulo-02.md
 ```
 
 - `progresso.md`: copie o modelo de `_templates/anotacao.md`, com os checkboxes
-  dos tópicos do mês. Marque conforme avança.
-- Uma nota por mês, com resumo próprio, dúvidas e links para o que consultou.
+  dos tópicos do módulo. Marque conforme avança.
+- Uma nota por módulo, com resumo próprio, dúvidas e links para o que consultou.
 
 ## Regras
 

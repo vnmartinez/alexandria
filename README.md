@@ -6,14 +6,14 @@ e estude — sem plugin, sem conta, sem custo.
 ## Comece por aqui
 
 - [Nó central do vault](INICIO.md)
-- [Psicologia — curso de 12 meses](https://github.com/vnmartinez/alexandria/blob/main/cursos/humanas/psicologia.md)
+- [Psicologia — curso em 12 módulos](https://github.com/vnmartinez/alexandria/blob/main/cursos/humanas/psicologia.md)
 - [Catálogo de livros](https://github.com/vnmartinez/alexandria/blob/main/biblioteca/catalogo.md)
 
 ## Áreas
 
 | Área | Cursos |
 |---|---|
-| [Ciências Humanas](https://github.com/vnmartinez/alexandria/blob/main/areas/humanas.md) | Psicologia (12 meses) |
+| [Ciências Humanas](https://github.com/vnmartinez/alexandria/blob/main/areas/humanas.md) | Psicologia (12 módulos) |
 | [Ciências Exatas](https://github.com/vnmartinez/alexandria/blob/main/areas/exatas.md) | — |
 | [Ciências da Natureza](https://github.com/vnmartinez/alexandria/blob/main/areas/natureza.md) | — |
 | [Ciências da Saúde](https://github.com/vnmartinez/alexandria/blob/main/areas/saude.md) | — |

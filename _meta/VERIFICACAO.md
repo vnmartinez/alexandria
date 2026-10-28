@@ -12,7 +12,7 @@ Windows, macOS ou Linux. "Verde" significa zero pendência.
       exceto `pessoal/README.md`).
 - [ ] Procure todas as ocorrências de `[[` fora de código e confira se cada alvo
       existe. Em `[[caminho/arquivo|texto]]`, o alvo é o caminho, não o texto. Em
-      `[[#Mês N — Tema]]`, o alvo é um título `##` da mesma nota, escrito igual.
+      `[[#Módulo N — Tema]]`, o alvo é um título `##` da mesma nota, escrito igual.
       Nos modelos, links de exemplo ficam entre crases e não contam.
 - [ ] Confirme que nenhum nome de arquivo aparece duas vezes no vault: wikilink
       resolve por nome, e duplicata torna o destino imprevisível. Única exceção:
@@ -35,21 +35,22 @@ Windows, macOS ou Linux. "Verde" significa zero pendência.
 
 Vale para cada nota em `cursos/<area>/<curso>.md`.
 
-- [ ] Frontmatter com `area`, `curso`, `nivel`, `carga-semanal`, `duracao`,
-      `atualizado`.
+- [ ] Frontmatter com `area`, `curso`, `nivel`, `atualizado`, sem previsão de
+      tempo em lugar nenhum da nota (carga, duração, semestre, mês).
 - [ ] Link para a área no topo e aviso de que o percurso não equivale a graduação
       nem habilita ao exercício profissional.
-- [ ] Seções de cabeçalho: Carga e ritmo, Índice, Bibliografia. O índice tem uma
-      âncora por mês.
-- [ ] Um `## Mês N — Tema` por mês, em ordem (12 no curso de Psicologia).
-- [ ] Em cada mês, nesta ordem: Objetivo, Tópicos, Leituras, Conceitos-chave,
-      Exercícios, Resultado esperado, Anotações, e a linha "Próximo" (exceto no
-      último mês).
-- [ ] Pelo menos 10 tópicos no formato `- [ ] N. …`.
-- [ ] Entre 8 e 10 exercícios numerados: 3 de múltipla escolha, 3 discursivos e
-      os demais de aplicação.
-- [ ] Gabarito único por mês em `<details>` com `<summary>Gabarito</summary>`,
-      cobrindo todos os exercícios.
+- [ ] Seções de cabeçalho: Como usar, Mapa de dependências, Índice, Bibliografia
+      (e Fontes, quando o curso deriva de ementas). O índice tem uma âncora por
+      módulo.
+- [ ] Um `## Módulo N — Tema` por módulo, em ordem. Toda dependência tem número
+      menor que o módulo e bate com o mapa.
+- [ ] Em cada módulo, nesta ordem: linha `**Depende de:**`, Objetivo, Tópicos,
+      Leituras, Conceitos-chave (opcional), Exercícios (opcional), Resultado
+      esperado, Anotações e a linha "Próximo" (exceto no último módulo).
+- [ ] Pelo menos 8 tópicos no formato `- [ ] N. …`.
+- [ ] Quando houver exercícios: entre 8 e 10, numerados (3 de múltipla escolha,
+      3 discursivos, os demais de aplicação), com gabarito único por módulo em
+      `<details>` com `<summary>Gabarito</summary>` cobrindo todos.
 - [ ] Anotações apontam para `pessoal/`.
 - [ ] Toda obra citada em Leituras existe no catálogo, com o mesmo título.
 - [ ] Seção `## Conclusão` no fim.
@@ -84,8 +85,8 @@ Vale para `biblioteca/catalogo.md`.
 
 ## 7. Conferência de leitura
 
-- [ ] Abrir `INICIO.md` no Obsidian e chegar a um mês do curso em três cliques
-      (área → curso → mês pelo índice), sem link em vermelho.
+- [ ] Abrir `INICIO.md` no Obsidian e chegar a um módulo do curso em três cliques
+      (área → curso → módulo pelo índice), sem link em vermelho.
 - [ ] Abrir o catálogo a partir de `INICIO.md` em um clique.
 - [ ] No grafo, com **Órfãos** ligado, nenhum nó solto e nenhum nó fantasma
       (alvo inexistente): só a árvore a partir de `INICIO`, sem ciclo.

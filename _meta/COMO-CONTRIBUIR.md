@@ -30,7 +30,7 @@ nada.
 ### Corrigir um erro
 
 Erro de conteúdo, gabarito errado, link quebrado: abra uma *issue* descrevendo o
-problema (arquivo, mês, exercício) ou envie um *pull request* com a correção e a
+problema (arquivo, módulo, exercício) ou envie um *pull request* com a correção e a
 fonte que a sustenta.
 
 ### Adicionar uma obra ao catálogo
@@ -44,7 +44,8 @@ fonte que a sustenta.
 ### Criar um curso
 
 1. Copie `_templates/curso.md` para `cursos/<area>/<curso>.md`.
-2. Preencha cabeçalho, bibliografia e um bloco `## Mês N — Tema` por mês, com 10 ou
+2. Preencha cabeçalho, bibliografia e um bloco `## Módulo N — Tema` por módulo, com a linha
+   "Depende de", 8 ou
    mais tópicos e de 8 a 10 exercícios com gabarito recolhido.
 3. Cite só obras do catálogo; inclua as que faltarem no mesmo *pull request*.
 4. Acrescente o curso na seção "Cursos" de `areas/<area>.md`.

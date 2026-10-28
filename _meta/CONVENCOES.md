@@ -29,7 +29,7 @@ solta e não há ciclo. Só estes wikilinks existem:
 | `INICIO.md` | — | 7 áreas, catálogo, `pessoal/README`, `_meta/sobre` |
 | `_meta/sobre.md` | `INICIO` | `AGENTS`, `_meta/COMO-CONTRIBUIR` |
 | `areas/<area>.md` | `INICIO` | cursos da própria área |
-| `cursos/<area>/<curso>.md` | sua área | âncoras internas (`[[#Mês N — Tema]]`) |
+| `cursos/<area>/<curso>.md` | sua área | âncoras internas (`[[#Módulo N — Tema]]`) |
 | `biblioteca/catalogo.md` | `INICIO` | — |
 | `AGENTS.md` | `_meta/sobre` | `CLAUDE`, `GEMINI`, playbooks de `_meta/agentes/` |
 | `_meta/agentes/*.md` | `AGENTS` | — |
@@ -57,15 +57,19 @@ solta e não há ciclo. Só estes wikilinks existem:
 
 Estrutura completa em `_templates/curso.md`. Resumo:
 
-- Frontmatter: `area`, `curso`, `nivel`, `carga-semanal`, `duracao`, `atualizado`.
-- Cabeçalho: link para a área, H1, público, aviso de não habilitação, Carga e
-  ritmo, Índice, Bibliografia.
-- Por mês, `## Mês N — Tema` com `### Objetivo`, `### Tópicos`, `### Leituras`,
-  `### Conceitos-chave`, `### Exercícios`, `### Resultado esperado`,
-  `### Anotações` e a linha "Próximo".
-- Tópicos: `- [ ] N. Texto.` — no mínimo 10.
-- Exercícios: de 8 a 10, numerados; 3 de múltipla escolha (alternativas em sublista
-  `- a) …`), 3 discursivos e o restante de aplicação. Gabarito único por mês:
+- Frontmatter: `area`, `curso`, `nivel`, `atualizado`. Nenhuma previsão de tempo
+  (carga, duração, semestre, mês): o curso define só a ordem e as dependências.
+- Cabeçalho: link para a área, H1, público, aviso de não habilitação, Como usar,
+  Mapa de dependências, Índice, Bibliografia e, quando o curso deriva de ementas,
+  Fontes (único lugar com URL).
+- Por módulo, `## Módulo N — Tema`, a linha `**Depende de:**` (âncoras dos módulos
+  anteriores ou "nenhum") e `### Objetivo`, `### Tópicos`, `### Leituras`,
+  `### Conceitos-chave` (opcional), `### Exercícios` (opcional),
+  `### Resultado esperado`, `### Anotações` e a linha "Próximo".
+- Dependência sempre tem número menor que o módulo (ordem topológica).
+- Tópicos: `- [ ] N. Texto.` — no mínimo 8.
+- Exercícios, quando houver: de 8 a 10, numerados; 3 de múltipla escolha (alternativas em sublista
+  `- a) …`), 3 discursivos e o restante de aplicação. Gabarito único por módulo:
 
   ```html
   <details>
@@ -97,6 +101,6 @@ Uma seção `## <Área>` por área e uma `### <Título>` por obra:
 ## Área pessoal
 
 - `pessoal/` não vai para o git; só `pessoal/README.md` é versionado.
-- Notas do aluno: `pessoal/<area>/<curso>/mes-NN.md`, a partir de
+- Notas do aluno: `pessoal/<area>/<curso>/modulo-NN.md`, a partir de
   `_templates/anotacao.md`.
 - Conteúdo versionado nunca linka para `pessoal/`; só indica o caminho em texto.
