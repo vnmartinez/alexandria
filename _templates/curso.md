@@ -80,7 +80,10 @@ Cite as obras pelo título, em texto; metadados e links ficam em
 ### Exercícios
 
 1. <múltipla escolha>
-   a) <alternativa> b) <alternativa> c) <alternativa> d) <alternativa>
+   - a) <alternativa>
+   - b) <alternativa>
+   - c) <alternativa>
+   - d) <alternativa>
 2. <múltipla escolha>
 3. <múltipla escolha>
 4. <discursiva>
